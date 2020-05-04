@@ -38,3 +38,31 @@ Babel的配置文件.babelrc
         "plugins": []
     }
 ```
+
+```
+配置scss环境 参考vue-cli4
+cnpm i node-sass sass-loader -D
+```
+
+```
+全局自定义方法
+main.js 里面挂载方法到 vue.prototype
+Vue.prototype.isMobile = function() {
+ let flag = navigator.userAgent.match(
+  /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
+ )
+ return flag;
+}
+组件里面使用
+mounted: function() {
+  this.isMobile();
+}
+
+```
+
+```
+axios 方法封装，整个 api.js
+Promise based HTTP client for the browser and node.js
+Axios 是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js 中。
+[中文文档](https://www.kancloud.cn/yunye/axios/234845)
+```
