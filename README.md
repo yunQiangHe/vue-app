@@ -66,3 +66,8 @@ Promise based HTTP client for the browser and node.js
 Axios 是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js 中。
 [中文文档](https://www.kancloud.cn/yunye/axios/234845)
 ```
+
+```
+如何规范 git 提交
+cnpm i -D commitizen conventional-changelog cz-conventional-changelog
+```
